@@ -10,8 +10,9 @@ export const getAllProducs = async (req, res) => {
 };
 
 export const getProductById=async(req,res)=>{
-  
-const {id}=req.paramas.id
+
+const id=req.params.id
+console.log(id)
 if(!id) return res.status(400).send("you doesnt provide any Id")
 try {
    
